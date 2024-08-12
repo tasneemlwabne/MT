@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: "Poppins";
+} */
+
+.container {
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .box {
+  width: 0%;
+  height: 600px;
+  position: absolute;
+  animation: openBox 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+.container .box .product__img {
+  width: 600px;
+  position: absolute;
+  left: -60px;
+  top: 50px;
+  opacity: 0;
+  animation: fadeImg 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.container .box .product__disc {
+  width: 0px;
+  height: 450px;
+  background: WhiteSmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  animation: showDisc 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+.container .box .product__disc .product__disc--content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  animation: fadeContent 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.container .box .product__disc .product__disc--content .disc__content--about {
+  width: 100%;
+}
+.container
+  .box
+  .product__disc
+  .product__disc--content
+  .disc__content--about
+  h1 {
+  font-size: 20px;
+  font-family: "Poppins";
+}
+.container
+  .box
+  .product__disc
+  .product__disc--content
+  .disc__content--about
+  h3 {
+  font-size: 15px;
+}
+.container
+  .box
+  .product__disc
+  .product__disc--content
+  .disc__content--about
+  span {
+  font-family: "Lato";
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  opacity: 0.5;
+}
+.container .box .product__disc .product__disc--content .disc__content--about p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #12222c;
+}
+.container .box .product_buttons {
+  width: 500px;
+  height: 100px;
+  bottom: 50px;
+  right: -50px;
+  position: absolute;
+}
+.container .box .product_buttons .btn {
+  width: 240px;
+  height: 70%;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Poppins";
+  -webkit-transition: ease-in-out 220ms;
+  -moz-transition: ease-in-out 220ms;
+  -ms-transition: ease-in-out 220ms;
+  -o-transition: ease-in-out 220ms;
+  transition: ease-in-out 220ms;
+  cursor: pointer;
+}
+.container .box .product_buttons .wishlist {
+  border: 2px solid #12222c;
+  background: plum;
+  color: #12222c;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  opacity: 0;
+  animation: fadeWish 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+.container .box .product_buttons .wishlist:hover {
+  box-shadow: 0 0 26px #12222c;
+}
+.container .box .product_buttons .buy {
+  border: 2px solid #12222c;
+  background: plum;
+  color: #12222c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+.container .box .product_buttons .buy:hover {
+  box-shadow: 0 0 26px #12222c;
+}
+
+/*
+  keyframes
+ */
+@keyframes openBox {
+  0% {
+    width: 0px;
+    left: 15%;
+  }
+  100% {
+    width: 900px;
+    left: 15%;
+  }
+}
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showDisc {
+  0% {
+    width: 0px;
+    left: 450px;
+  }
+  100% {
+    width: 500px;
+    left: 450px;
+  }
+}
+@keyframes fadeContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeWish {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fadeBuy {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}

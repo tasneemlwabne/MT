@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Style */
+/* html,
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
+  color: black;
+} */
+
+/* Trainers */
+#trainers .trainer-boxes {
+  display: flex;
+}
+.primary-text {
+  color: plum;
+  font-family: Andalus;
+}
+#h3 {
+  color: #12222c;
+  text-align: center;
+}
+hr {
+  background-color: plum;
+}
+
+#trainers .trainer-boxes .trainer-box {
+  flex: 1;
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+#trainers .trainer-boxes .trainer-box img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

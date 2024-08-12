@@ -1,0 +1,75 @@
+google account app passwords code
+
+sidg iscv dqoi rqgq
+
+//////////////////////////////////
+
+// function reset_qty($con,$id,$qty)
+// {
+//     $query="update product set qty='".$qty."'WHERE id='".$id."'";
+//     $res=mysqli_query($con,$query);
+// }
+// session_start();
+// if(isset($_GET["action"]))
+// {
+//     if($_GET["action"] == "delete")
+//     {
+//         $cookie_data = stripslashes($_COOKIE['shopping_cart']);
+//         $cart_data = json_decode($cookie_data, true);
+//         foreach($cart_data as $keys => $values)
+//         {
+//             if($cart_data[$keys]['item_id'] == $_GET["id"])
+//             {
+//                 if($values["user_email"] == $_SESSION["email"])
+//                 {
+//                     $id=$_GET["id"];
+//                     $qty=$values['item_qty'];
+//                     reset_qty($con,$id,$qty);
+//                         unset($cart_data[$keys]);
+//                         $item_data = json_encode($cart_data);
+//                         setcookie("shopping_cart", $item_data, time() + (86400 * 7));
+//                         header("location:cart.php?remove=1");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// if(isset($_GET["success"]))
+// {
+// 	echo '<script>alert("Item  Added")</script>';
+// }
+
+// $duration = 45;
+// $cleanup = 0;
+// $start = "00:00";
+// $end = "03:00";
+
+// function timeslots($duration, $cleanup, $start, $end){
+//     $start = new DateTime($start);
+//     $end = new DateTime($end);
+//     $interval = new DateInterval("PT".$duration."M");
+//     $cleanupInterval = new DateInterval("PT".$cleanup."M");
+//     $slots = array();
+    
+//     for($intStart = $start; $intStart<$end; $intStart->add($interval)->add($cleanupInterval)){
+//         $endPeriod = clone $intStart;
+//         $endPeriod->add($interval);
+//         echo $endPeriod->format("H:i");
+//         $date=date('d/m/Y');
+//         $date2 = strtotime($date);
+//         if($endPeriod>=$end && date('d/m/Y') == $date2){
+//             echo "fuck";
+//             $slots = array_slice($slots, 1);
+//             break;
+//         }else {
+            
+//         $slots[] = $intStart->format("H:i")." - ". $endPeriod->format("H:i");
+        
+//     }
+        
+//     }
+    
+//     return $slots;
+// }

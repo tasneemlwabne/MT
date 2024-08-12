@@ -1,0 +1,50 @@
+::selection {
+  color: #fff;
+  background: #6665ee;
+}
+.container {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-40%, -50%);
+  margin-left: 100px;
+}
+.container .form {
+  padding: 30px 35px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+  color: #12222c;
+}
+.container .form form .form-control {
+  height: 70px;
+  font-size: 15px;
+}
+.container .form form .forget-pass {
+  margin: -15px 0 15px 0;
+}
+.container .form form .forget-pass a {
+  font-size: 15px;
+}
+.container .form form .button {
+  background: plum;
+  color: #12222c;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.container .form form .button:hover {
+  background: #12222c;
+  color: #fff;
+}
+.container .form form .link {
+  padding: 5px 0;
+}
+.container .form form .link a {
+  color: #6665ee;
+}
+.container .login-form form p {
+  font-size: 14px;
+}
+.container .row .alert {
+  font-size: 14px;
+}
